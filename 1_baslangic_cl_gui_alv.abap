@@ -91,7 +91,7 @@ FORM display_alv .
   "CLGUI ALVYI CREATE EDIP IÇERİSİNDE ÇALIŞACAK CONTAINERİ I_PARENT KISMINA VERDİK.
   CREATE OBJECT go_alv
     EXPORTING
-      i_parent = go_cont.
+      i_parent = go_cont. "cl_gui_container=>screen0. deseydik fullscreen alv şeklinde ekrana basacaktı.
 
   CALL METHOD go_alv->set_table_for_first_display
     EXPORTING
